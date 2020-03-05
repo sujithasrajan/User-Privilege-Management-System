@@ -27,3 +27,21 @@ the user provided is a member of that group
 ○ Must validate the path to ensure the directory exists
 
 ○ Exit with a descriptive error message if it does not exist
+
+
+Each entry has the following fields. The fields are separated by a colon.
+
+● Absolute path of the file or directory
+
+● Permissions of the file (all permissions in the form they are displayed by the “ls -al”
+command)
+
+● Check permissions as the Linux system checks permissions. Start with user, then
+group, then other and stop when you find a match.
+
+○ Each line has a single letter (U, G, or O) indicating what is applicable in
+this case as well as a Y if execute permission is there for the permission in
+question or a N if execute permission is not present.
+
+● Trap exit the script and ensure everything (temporary files, etc.) is cleaned up
+properly
