@@ -45,3 +45,35 @@ question or a N if execute permission is not present.
 
 ● Trap exit the script and ensure everything (temporary files, etc.) is cleaned up
 properly
+
+
+
+
+# USEFUL TEST CASES
+
+test - below are the file tests
+
+○ Reads a series of options up to a semicolon and returns a value depending upon results
+
+○ -f = tests for existence of a file and that it is a normal file (not directory, not a device file)
+
+○ -ef = files have same device and inode numbers
+
+○ -nt = file1 newer (later modification date) than file2
+
+○ -ot = file1 older than file2
+
+○ -d = file exists and is a directory
+
+○ -e = file exists
+
+○ -h = file exists and is a symbolic link
+
+○ -r = file exists and user can read it
+
+○ -s = file exists and file size is greater than zero
+
+○ -w = file exists and user can write it
+
+○ -x = file exists and user can execute it
+
