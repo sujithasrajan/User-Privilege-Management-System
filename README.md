@@ -77,3 +77,13 @@ test - below are the file tests
 
 ○ -x = file exists and user can execute it
 
+
+● Testing strings
+
+○ -z = zero length string
+
+○ -n = non-zero length string
+
+○ = strings are equal
+
+○ != strings are not equal
